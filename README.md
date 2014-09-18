@@ -42,7 +42,7 @@ Useful Links
 
 Dedicated Repository: http://archive.yeasoft.net/repository.yeasoft.zip
 
-Support Forum: http://forum.xbmc.org/showthread.php?tid=183456
+Support Forum: http://forum.xbmc.org/showthread.php?tid=204667
 
 
 [1]: http://www.fhem.de
