@@ -1,3 +1,6 @@
+0.1.2
+- Compliance fixes for the official repository
+
 0.1.1
 - Compliance fixes for the official repository
 
