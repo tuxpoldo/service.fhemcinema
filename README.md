@@ -33,6 +33,18 @@ Prerequisites
 You need a working installation of FHEM and knowledge about the commands to send
 in order to get the desired results.
 
+The addon communicates with FHEM using the telnet command line interface on port
+7072 by default. If you have configured the telnet interface to listen on a
+different port, you should adjust the port number in the addon configuration
+page, where you can also specify all commands you want to be issued on player
+actions. If the telnet inteface is not enabled in your FHEM configuration, you
+should add the following lines to your FHEM configuration file and restart FHEM:
+
+```
+define telnetPort telnet 7072 global
+```
+
+
 License
 -------
 This software is released under the [GPL 2.0 license] [2].
