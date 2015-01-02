@@ -1,5 +1,5 @@
-FHEM Home Cinema Service
-========================
+FHEM/CCU Home Cinema Service
+============================
 
 About
 -----
@@ -30,7 +30,9 @@ during daylight hours.
 Prerequisites
 -------------
 
-You need a working installation of FHEM and knowledge about the commands to send
+If you are using this addon with an Homematic CCU you need a system variable with a value list from 0 to 8.
+
+For FHEM you need a working installation and knowledge about the commands to send
 in order to get the desired results.
 
 The addon communicates with FHEM using the telnet command line interface on port
@@ -43,6 +45,22 @@ should add the following lines to your FHEM configuration file and restart FHEM:
 ```
 define telnetPort telnet 7072 global
 ```
+
+
+Homematic CCU value explanation
+-------------------------------
+
+| Event                 | System variable value |
+| --------------------- |----------------------:|
+| XBMC start            | 1 |
+| XBMC shutdown         | 2 |
+| Audio playback start  | 3 |
+| Video playback start  | 4 |
+| Audio playback stop   | 5 |
+| Video playback stop   | 6 |
+| Audio playback pause  | 7 |
+| Video playback pause  | 8 |
+| Unknown               | 0 |
 
 
 License
