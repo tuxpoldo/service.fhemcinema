@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <strings>
 	<string id="30001">General Settings</string>
-	<string id="30002">Daytime Commands</string>
+	<string id="30002">Daytime</string>
 	<string id="30011">Host</string>
 	<string id="30012">Port</string>
 	<string id="30013">Actions</string>
