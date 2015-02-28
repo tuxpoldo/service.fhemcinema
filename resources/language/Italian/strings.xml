@@ -2,8 +2,8 @@
 <strings>
 	<string id="30001">Allgemein</string>
 	<string id="30002">Di Giorno</string>
-	<string id="30011">Host FHEM</string>
-	<string id="30012">Port FHEM</string>
+	<string id="30011">Host</string>
+	<string id="30012">Port</string>
 	<string id="30013">Azioni</string>
 	<string id="30021">Attivare variante diurna</string>
 	<string id="30022">Da</string>

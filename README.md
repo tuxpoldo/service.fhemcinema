@@ -1,16 +1,10 @@
-FHEM Home Cinema Service
-========================
+FHEM/CCU Home Cinema Service
+============================
 
 About
 -----
 
-[FHEM][1] is a GPL licensed perl server for house automation. It is used to
-automate some common tasks in the household like switching lamps, shutters,
-heating, etc. and to log events like temperature, humidity or power consumption.
-The program runs as a server, you can control it via web or smartphone front-
-ends, telnet or TCP/IP directly.
-
-This service allows to send commands to FHEM on specific player actions in order
+This service allows to send commands to FHEM or Homematic CCU on specific player actions in order
 to create a cinema like atmosphere at home. The user can configure commands to
 send to FHEM on various player events:
 
@@ -23,14 +17,21 @@ send to FHEM on various player events:
  - On Audio Playback Pause
  - On Audio Playback Stop
 
-Optional daytime support allows to specify an alternative set of commands to use
+Optional daytime support (only FHEM) allows to specify an alternative set of commands to use
 during daylight hours.
 
+[FHEM][1] is a GPL licensed perl server for house automation. It is used to
+automate some common tasks in the household like switching lamps, shutters,
+heating, etc. and to log events like temperature, humidity or power consumption.
+The program runs as a server, you can control it via web or smartphone front-
+ends, telnet or TCP/IP directly.
+
+[Homematic CCU][3] is a central unit for house automation build by the company eQ-3.
 
 Prerequisites
 -------------
 
-You need a working installation of FHEM and knowledge about the commands to send
+For FHEM you need a working installation and knowledge about the commands to send
 in order to get the desired results.
 
 The addon communicates with FHEM using the telnet command line interface on port
@@ -43,6 +44,12 @@ should add the following lines to your FHEM configuration file and restart FHEM:
 ```
 define telnetPort telnet 7072 global
 ```
+
+If you are using this addon with an Homematic CCU you need a system variable with a value list
+```
+Unknown;Start;Shutdown;Audio playback start;Video playback start;Audio playback stop;Video playback stop;Audio playback pause;Video playback pause
+```
+![Homematic configuration screenshot](/screenshots/ccu_config.png)
 
 
 License
@@ -59,3 +66,4 @@ Support Forum: http://forum.xbmc.org/showthread.php?tid=204667
 
 [1]: http://www.fhem.de
 [2]: http://www.gnu.org/licenses/gpl-2.0.html
+[3]: http://www.eq-3.de/produkt-detail-zentralen-und-gateways/items/homematic-zentrale-ccu-2.html
