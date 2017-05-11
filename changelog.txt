@@ -1,3 +1,6 @@
+0.3.1
+- Added option for delaying the Video/Audio stopped command
+
 0.3.0
 - Added copyright notice of the plugin logo (The plugin logo is under copyright by bytefeed.com)
 
