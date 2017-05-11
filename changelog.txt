@@ -1,3 +1,6 @@
+0.3.2
+- Added italien translation to new delaying option
+
 0.3.1
 - Added option for delaying the Video/Audio stopped command
 
