@@ -59,8 +59,9 @@ Unknown;Start;Shutdown;Audio playback start;Video playback start;Audio playback 
 
 License
 -------
-This software is released under the [GPL 2.0 license] [2].
-The plugin logo is under copyright by [bytefeed.com] [4]. Thank you for the kind permission of use!
+This software is released under the [GPL 2.0 license][2].
+The plugin logo is under copyright by [bytefeed.com][4].
+Thank you for the kind permission of use!
 
 
 Useful Links
