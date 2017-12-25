@@ -1,5 +1,9 @@
+0.3.3
+- Fixed broken settings (Closes #4)
+- Adapted to new language system
+
 0.3.2
-- Added italien translation to new delaying option
+- Added italian translation to new delaying option
 
 0.3.1
 - Added option for delaying the Video/Audio stopped command

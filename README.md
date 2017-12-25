@@ -54,7 +54,7 @@ with a value list
 Unknown;Start;Shutdown;Audio playback start;Video playback start;Audio playback stop;Video playback stop;Audio playback pause;Video playback pause
 ```
 
-![Homematic configuration screenshot](/screenshots/ccu_config.png)
+![Homematic configuration screenshot](/resources/screenshots/ccu_config.png)
 
 
 License
