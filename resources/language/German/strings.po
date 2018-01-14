@@ -2,7 +2,6 @@
 # Addon Name: MediathekView
 # Addon id: service.fhemcinema
 # Addon Provider: leo.moll@yeasoft.com
-msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Addons\n"
 "Report-Msgid-Bugs-To: leo.moll@yeasoft.com\n"
@@ -17,78 +16,77 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "#30001"
-msgid "Allgemein"
-msgstr ""
+msgstr "General Settings"
+msgstr "Allgemein"
 
 msgctxt "#30002"
-msgid "Tagsüber"
-msgstr ""
+msgid "Daytime"
+msgstr "Tagsüber"
 
 msgctxt "#30010"
-msgid "Heim-Automationssystem"
-msgstr ""
+msgid "Home Automation System"
+msgstr "Heim-Automationssystem"
 
 msgctxt "#30011"
 msgid "Host"
-msgstr ""
+msgstr "Host"
 
 msgctxt "#30012"
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 msgctxt "#30013"
-msgid "Befehl bei Video/Audio gestoppt verzögern"
-msgstr ""
+msgid "Delay command on Video/Audio Stopped"
+msgstr "Befehl bei Video/Audio gestoppt verzögern"
 
 msgctxt "#30014"
-msgid "Aktionen"
-msgstr ""
+msgid "Actions"
+msgstr "Aktionen"
 
 msgctxt "#30021"
-msgid "Tagesvariante aktivieren (nur mit FHEM)"
-msgstr ""
+msgid "Enable Daytime Commands (only FHEM)"
+msgstr "Tagesvariante aktivieren (nur mit FHEM)"
 
 msgctxt "#30022"
-msgid "Von"
-msgstr ""
+msgid "From"
+msgstr "Von"
 
 msgctxt "#30023"
-msgid "Bis"
-msgstr ""
+msgid "To"
+msgstr "Bis"
 
 msgctxt "#30031"
-msgid "Kodi gestartet"
-msgstr ""
+msgid "On Startup"
+msgstr "Kodi gestartet"
 
 msgctxt "#30032"
-msgid "Kodi beendet"
-msgstr ""
+msgid "On Shutdown"
+msgstr "Kodi beendet"
 
 msgctxt "#30033"
-msgid "Videowiedergabe gestartet"
-msgstr ""
+msgid "Video Started"
+msgstr "Videowiedergabe gestartet"
 
 msgctxt "#30034"
-msgid "Videowiedergabe angehalten"
-msgstr ""
+msgid "Video Paused"
+msgstr "Videowiedergabe angehalten"
 
 msgctxt "#30035"
-msgid "Videowiedergabe beendet"
-msgstr ""
+msgid "Video Stopped"
+msgstr "Videowiedergabe beendet"
 
 msgctxt "#30036"
-msgid "Audiowiedergabe gestartet"
-msgstr ""
+msgid "Audio Started"
+msgstr "Audiowiedergabe gestartet"
 
 msgctxt "#30037"
-msgid "Audiowiedergabe angehalten"
-msgstr ""
+msgid "Audio Paused"
+msgstr "Audiowiedergabe angehalten"
 
 msgctxt "#30038"
-msgid "Audiowiedergabe beendet"
-msgstr ""
+msgid "Audio Stopped"
+msgstr "Audiowiedergabe beendet"
 
 msgctxt "#30039"
-msgid "Systemvariable"
-msgstr ""
-
+msgid "System variable"
+msgstr "Systemvariable"

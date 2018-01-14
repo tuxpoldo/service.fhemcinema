@@ -18,77 +18,76 @@ msgstr ""
 
 msgctxt "#30001"
 msgid "General Settings"
-msgstr ""
+msgstr "General Settings"
 
 msgctxt "#30002"
 msgid "Daytime"
-msgstr ""
+msgstr "Daytime"
 
 msgctxt "#30010"
 msgid "Home Automation System"
-msgstr ""
+msgstr "Home Automation System"
 
 msgctxt "#30011"
 msgid "Host"
-msgstr ""
+msgstr "Host"
 
 msgctxt "#30012"
 msgid "Port"
-msgstr ""
+msgstr "Port"
 
 msgctxt "#30013"
 msgid "Delay command on Video/Audio Stopped"
-msgstr ""
+msgstr "Delay command on Video/Audio Stopped"
 
 msgctxt "#30014"
 msgid "Actions"
-msgstr ""
+msgstr "Actions"
 
 msgctxt "#30021"
 msgid "Enable Daytime Commands (only FHEM)"
-msgstr ""
+msgstr "Enable Daytime Commands (only FHEM)"
 
 msgctxt "#30022"
 msgid "From"
-msgstr ""
+msgstr "From"
 
 msgctxt "#30023"
 msgid "To"
-msgstr ""
+msgstr "To"
 
 msgctxt "#30031"
 msgid "On Startup"
-msgstr ""
+msgstr "On Startup"
 
 msgctxt "#30032"
 msgid "On Shutdown"
-msgstr ""
+msgstr "On Shutdown"
 
 msgctxt "#30033"
 msgid "Video Started"
-msgstr ""
+msgstr "Video Started"
 
 msgctxt "#30034"
 msgid "Video Paused"
-msgstr ""
+msgstr "Video Paused"
 
 msgctxt "#30035"
 msgid "Video Stopped"
-msgstr ""
+msgstr "Video Stopped"
 
 msgctxt "#30036"
 msgid "Audio Started"
-msgstr ""
+msgstr "Audio Started"
 
 msgctxt "#30037"
 msgid "Audio Paused"
-msgstr ""
+msgstr "Audio Paused"
 
 msgctxt "#30038"
 msgid "Audio Stopped"
-msgstr ""
+msgstr "Audio Stopped"
 
 msgctxt "#30039"
 msgid "System variable"
-msgstr ""
-
+msgstr "System variable"
