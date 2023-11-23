@@ -64,6 +64,13 @@ class FhemHandler( xbmc.Player ):
 			xbmc.log( 'Cinema: Exception in isDayTime: ' + str( e ), xbmc.LOGERROR )
 			return False
 
+	def isLiveTv( self ):
+		try:
+			file = self.getPlayingFile()
+			return self.isplayingvideo and file.find("pvr://") > -1
+		except:
+			return False
+
 	def getCommand( self, command ):
 		if settings.getSetting( 'daytimeenable' ) == "true":
 			if self.isDayTime():
@@ -71,6 +78,9 @@ class FhemHandler( xbmc.Player ):
 		return settings.getSetting(command)
 
 	def SendCommand(self,command):
+		if settings.getSetting( 'ignorelivetv' ) == "true" and self.isLiveTv():
+			xbmc.log('suppressing fhem command due to livetv')
+			return
 		endpointtype=settings.getSetting('endpointtype')
 		if type(endpointtype) is str and endpointtype == "FHEM":
 			self.SendFHEM(self.getCommand(command))
