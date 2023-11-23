@@ -91,3 +91,7 @@ msgstr "Audio Stopped"
 msgctxt "#30039"
 msgid "System variable"
 msgstr "System variable"
+
+msgctxt "#30040"
+msgid "Ignore LiveTV"
+msgstr "Ignore LiveTV"

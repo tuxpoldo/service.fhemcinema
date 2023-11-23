@@ -90,3 +90,7 @@ msgstr "Audio finito"
 msgctxt "#30039"
 msgid "System variable"
 msgstr "Variabile di sistema"
+
+msgctxt "#30040"
+msgid "Ignore LiveTV"
+msgstr "Ignorare la televisione"

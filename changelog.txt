@@ -1,3 +1,7 @@
+0.4.0
+- added python3 support
+- allow to ignore events in case live tv is played back
+
 0.3.3
 - Fixed broken settings (Closes #4)
 - Adapted to new language system

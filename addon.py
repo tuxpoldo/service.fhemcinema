@@ -18,7 +18,7 @@
 # -- Imports ------------------------------------------------
 import datetime,socket,subprocess,os
 import xbmc,xbmcplugin,xbmcgui,xbmcaddon
-import httplib
+import http.client
 import time
 
 # -- Constants ----------------------------------------------
@@ -64,6 +64,13 @@ class FhemHandler( xbmc.Player ):
 			xbmc.log( 'Cinema: Exception in isDayTime: ' + str( e ), xbmc.LOGERROR )
 			return False
 
+	def isLiveTv( self ):
+		try:
+			file = self.getPlayingFile()
+			return self.isplayingvideo and file.find("pvr://") > -1
+		except:
+			return False
+
 	def getCommand( self, command ):
 		if settings.getSetting( 'daytimeenable' ) == "true":
 			if self.isDayTime():
@@ -71,6 +78,9 @@ class FhemHandler( xbmc.Player ):
 		return settings.getSetting(command)
 
 	def SendCommand(self,command):
+		if settings.getSetting( 'ignorelivetv' ) == "true" and self.isLiveTv():
+			xbmc.log('suppressing fhem command due to livetv')
+			return
 		endpointtype=settings.getSetting('endpointtype')
 		if type(endpointtype) is str and endpointtype == "FHEM":
 			self.SendFHEM(self.getCommand(command))
@@ -85,7 +95,7 @@ class FhemHandler( xbmc.Player ):
 			xbmc.log ('Sending command to FHEM: '+command)
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			s.connect((settings.getSetting('hostname'), int(settings.getSetting('port'))))
-			s.send('\n{0}\nexit\n'.format(command))
+			s.send('\n{0}\nexit\n'.format(command).encode())
 			s.close()
 
 	def SendCCU(self,command):
@@ -112,7 +122,7 @@ class FhemHandler( xbmc.Player ):
 				state = 8
 			else:
 				state = 0
-			connection = httplib.HTTPConnection(hostname,8181,timeout=10)
+			connection = http.client.HTTPConnection(hostname,8181,timeout=10)
 			connection.connect();
 			connection.set_debuglevel(9);
 			params = 'v1=dom.GetObject(\"'+ccusystemvar+'\").State(\"' + str(state) + '\");';
@@ -124,7 +134,8 @@ class FhemHandler( xbmc.Player ):
 			xbmc.log ('No CCU Object configured')
 
 	def Run(self):
-		while(not xbmc.abortRequested):
+		monitor = xbmc.Monitor()
+		while(not monitor.abortRequested()):
 			if xbmc.Player().isPlaying():
 				if xbmc.Player().isPlayingVideo():
 					self.isplayingvideo = True
